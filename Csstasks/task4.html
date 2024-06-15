@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoverable Sidenav Buttons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 60px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #f1f1f1;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 15px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    text-align: center;
+    transition: 0.3s;
+    
+}
+
+.sidenav a:hover {
+    width: 180px;
+}
+
+.sidenav .green {
+    background-color: #4CAF50;
+}
+
+.sidenav .blue {
+    background-color: #2196F3;
+}
+
+.sidenav .red {
+    background-color: #f44336;
+}
+
+.sidenav .black {
+    background-color: #555;
+}
+
+.main {
+    margin-left: 60px;
+    padding: 20px;
+}
+
+</style>
+<body>
+    <div class="sidenav">
+        <a href="#" class="green">Green</a>
+        <a href="#" class="blue">Blue</a>
+        <a href="#" class="red">Red</a>
+        <a href="#" class="black">Black</a>
+    </div>
+    <div class="main">
+        <h2>Hoverable Sidenav Buttons</h2>
+        
+    </div>
+</body>
+</html>

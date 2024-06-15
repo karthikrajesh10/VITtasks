@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Styled Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #dcdc67;
+    
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #fff;
+    width: 200px;
+    padding: 10px;
+    background-color: #dcdc67;
+}
+
+.nav-item {
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #fff;
+    color: black;
+    text-decoration: none;
+    border-left: 10px solid black;
+    transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+    background-color: #ddd;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+h1 {
+    color: #6a0dad;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #cc8400;
+    font-size: 18px;
+}
+
+.signature {
+    margin-top: 50px;
+    font-style: italic;
+    color: #000;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <a href="#" class="nav-item">Home page</a>
+            <a href="#" class="nav-item">Musings</a>
+            <a href="#" class="nav-item">My town</a>
+            <a href="#" class="nav-item">Links</a>
+        </div>
+        <div class="content">
+            <h1>My first styled page</h1>
+            <p>Welcome to my styled page!</p>
+            <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+            <p>There should be more here, but I don't know what yet.</p>
+            <p class="signature">Made 13 June 2024<br>by myself.</p>
+        </div>
+    </div>
+</body>
+</html>

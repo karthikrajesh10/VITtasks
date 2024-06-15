@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.outside-box{
+    width: 750px;
+    height: 750px;
+    background-color: #800040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+.container {
+    background-color:rgb(93, 5, 60); 
+    padding: 20px;
+    border-radius: 10px;
+    width: 650px;
+    height: 650px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 10px;
+}
+
+label {
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.gender {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender label {
+    color: #ffffff;
+    margin: 0 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ffffff;
+    color: #800040;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #f1f1f1;
+}
+
+</style>
+<body>
+    <div class="outside-box">
+        <div class="container">
+            <form action="#" method="post">
+                <table>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="your name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="your email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td><input type="password" id="password" name="password" placeholder="your password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input type="text" id="phone" name="phone" placeholder="your phone number" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="gender">Gender:</label></td>
+                        <td class="gender">
+                            <input type="radio" id="male" name="gender" value="male">
+                            <label for="male">Male</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                            <label for="female">Female</label>
+                            <input type="radio" id="other" name="gender" value="other">
+                            <label for="other">Other</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="language">Language:</label></td>
+                        <td>
+                            <select id="language" name="language" required>
+                                <option value="">Select language</option>
+                                <!-- Add more language options here -->
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="zip">Zip Code:</label></td>
+                        <td><input type="text" id="zip" name="zip" placeholder="your zip code" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="about">About:</label></td>
+                        <td><textarea id="about" name="about" placeholder="Write about yourself..." required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <button type="submit">Register</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </div>
+    
+</body>
+</html>
